@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semicon Insight: 글로벌 반도체 기술 및 정책 분석</title>
+    <style>
+        /* CSS 변수 설정 */
+        :root {
+            --color-primary-blue: #003366; /* 진한 네이비 블루 (전문적) */
+            --color-accent-blue: #007BFF; /* 밝은 아쿠아 블루 (강조/링크) */
+            --color-light-gray: #F8F9FA; /* 배경색 */
+            --color-text-dark: #343A40; /* 어두운 텍스트 */
+            --font-family: 'Arial', 'Malgun Gothic', '맑은 고딕', sans-serif;
+        }
+
+        /* 기본 스타일 */
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white; /* 깔끔한 배경 */
+            color: var(--color-text-dark);
+        }
+
+        a {
+            color: var(--color-accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* 헤더/네비게이션 스타일 (파란색 계열) */
+        header {
+            background-color: var(--color-primary-blue);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            font-weight: 500;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        /* 히어로 섹션 (강조) */
+        .hero {
+            background-color: var(--color-light-gray);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--color-accent-blue); /* 파란색 강조 라인 */
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            color: var(--color-primary-blue);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: var(--color-text-dark);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 메인 콘텐츠 섹션 */
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--color-primary-blue);
+            border-bottom: 3px solid var(--color-accent-blue);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* 뉴스/기사 카드 스타일 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            background-color: white;
+            border: 1px solid #E0E0E0;
+            border-top: 5px solid var(--color-accent-blue); /* 기술 전문가 느낌 강조 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 51, 102, 0.05); /* 은은한 그림자 */
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 51, 102, 0.1);
+        }
+
+        .news-card h3 {
+            font-size: 1.3em;
+            color: var(--color-primary-blue);
+            margin-top: 0;
+        }
+
+        .news-card p {
+            font-size: 0.9em;
+            color: #6C757D;
+        }
+        
+        /* 이미지 플레이스홀더 */
+        .demo-image {
+            width: 100%;
+            height: 200px;
+            background-color: #CCCCFF; /* 파란 계열의 데모 색상 */
+            color: var(--color-primary-blue);
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+        
+        /* 푸터 */
+        footer {
+            background-color: var(--color-primary-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 헤더 (Header) -->
+    <header>
+        <div class="container">
+            <div class="logo">Semicon Insight</div>
+            <nav>
+                <a href="#policy">글로벌 정책</a>
+                <a href="#technology">첨단 기술 동향</a>
+                <a href="#contact">문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. 히어로 섹션 (Hero Section) -->
+    <section class="hero">
+        <div class="container">
+            <h1>미래를 선도하는 반도체 기술. 팹리스 성공을 위한 전문 통찰.</h1>
+            <p>30-50대 기업인을 위한 필수적인 글로벌 정책 분석과 차세대 기술 트렌드를 제공합니다.</p>
+        </div>
+    </section>
+
+    <!-- 3. 글로벌 정책 뉴스 섹션 (Global Policy News) -->
+    <section id="policy">
+        <div class="container">
+            <h2>글로벌 정책 & 시장 뉴스</h2>
+            <div class="news-grid">
+                
+                <!-- 기사 카드 1 (실제 뉴스/정책) -->
+                <div class="news-card">
+                    <div class="demo-image">정책 뉴스 이미지 (Demo)</div>
+                    <h3><a href="#">미국 CHIPS Act, 한국 팹리스 기업에 미치는 영향 분석</a></h3>
+                    <p>전문가 칼럼: 최근 발표된 미국 반도체 법안의 세부 조항을 분석하고, 국내 팹리스 기업의 전략적 대응 방안을 제시합니다.</p>
+                    <p class="date" style="font-size:0.8em;">2025.10.24</p>
+                </div>
+
+                <!-- 기사 카드 2 (실제 뉴스/정책) -->
+                <div class="news-card">
+                    <div class="demo-image">중국 시장 동향 (Demo)</div>
+                    <h3><a href="#">중국 반도체 자급률 목표와 국내 협력사의 대응 전략</a></h3>
+                    <p>중국 정부의 반도체 기술 자립 강화 정책 변화에 따른 시장 리스크와 기회를 심층적으로 다룹니다.</p>
+                    <p class="date" style="font-size:0.8em;">2025.10.20</p>
+                </div>
+                
+                <!-- 기사 카드 3 (기술 전문가 느낌) -->
+                <div class="news-card">
+                    <div class="demo-image">유럽 규제 뉴스 (Demo)</div>
+                    <h3><a href="#">EU의 AI 반도체 규제 동향: 미래 산업에 미치는 파장</a></h3>
+                    <p>유럽연합의 첨단 기술 및 AI 관련 규제안이 반도체 설계와 공급망에 어떤 새로운 표준을 요구하는지 살펴봅니다.</p>
+                    <p class="date" style="font-size:0.8em;">2025.10.15</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 첨단 기술 동향 섹션 (Technology Trends) -->
+    <section id="technology" style="background-color: var(--color-light-gray);">
+        <div class="container">
+            <h2>첨단 기술 동향 분석</h2>
+            <div class="news-grid">
+                
+                <!-- 기술 카드 1 -->
+                <div class="news-card">
+                    <div class="demo-image">GAA 기술 (Demo)</div>
+                    <h3><a href="#">Gate-All-Around (GAA) 기술의 3nm 이하 공정 혁신</a></h3>
+                    <p>차세대 트랜지스터 구조인 GAA 기술의 설계 장벽과 팹리스 설계 최적화 방안에 대한 심도 있는 기술 보고서입니다.</p>
+                </div>
+                
+                <!-- 기술 카드 2 -->
+                <div class="news-card">
+                    <div class="demo-image">HBM 기술 (Demo)</div>
+                    <h3><a href="#">AI 시대, 고대역폭 메모리(HBM)의 설계 및 성능 개선</a></h3>
+                    <p>AI 가속기 시장의 핵심인 HBM의 최신 스택 기술과 열 관리 이슈를 중점적으로 분석합니다.</p>
+                </div>
+                
+                <!-- 기술 카드 3 -->
+                <div class="news-card">
+                    <div class="demo-image">패키징 기술 (Demo)</div>
+                    <h3><a href="#">어드밴스드 패키징 기술: 2.5D/3D 이종 집적화의 미래</a></h3>
+                    <p>칩렛(Chiplet) 아키텍처를 활용한 이종 집적 기술의 최신 동향과 원가 절감 효과를 탐구합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 푸터 (Footer) -->
+    <footer id="contact">
+        <div class="container">
+            <p>© 2025 Semicon Insight. All rights reserved. | 문의: contact@semiconinsight.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
